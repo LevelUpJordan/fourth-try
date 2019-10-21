@@ -1,0 +1,283 @@
+body {
+  font: 14px "Century Gothic", Futura, sans-serif;
+  margin: 20px;
+  background: #9D8D8F;
+}
+
+ol, ul {
+  padding-left: 30px;
+}
+
+#spotifyLogin {
+	position:absolute;
+	top:0px;
+	right: 0px;
+}
+
+#playlistBuilder {
+	width:100%;
+	height:100%;
+}
+
+#mainArtist {
+	width: 40%;
+	max-width: 30%;
+	max-height: 30%;
+	position: absolute;
+	left: 45%;
+	top: 45%;
+}
+
+#mainArtistTracks {
+	padding: 1%;
+	border-color:#FAED26;
+	color:#FAED26;
+	background-color: #5A5560;
+	border-width:2px;
+	border:solid;
+	width:100%;
+}
+
+#mainArtistInput {
+	width: 100%;
+	border-color:#FAED26;
+	color:#FAED26;
+	background-color: #5A5560;
+	padding: 1%;
+	text-align:center;
+	font-weight: bold;
+}
+
+#mainArtistInput:-webkit-autofill,
+#mainArtistInput:-webkit-autofill:hover, 
+#mainArtistInput:-webkit-autofill:focus, 
+#mainArtistInput:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #5A5560 inset !important;
+	-webkit-text-fill-color: #FAED26 !important;
+}
+
+#mainArtistTrackTable {
+	max-width: 100%;
+	width: 100%;
+	max-height: 80%;
+	overflow: hidden;
+	table-layout: fixed;
+	background:#5A5560;
+}
+
+#playListArea {
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	height: 100%;
+	width: 25%;
+	background: #5A5560;
+	border-right:solid;
+	border-color: #46344E;
+}
+
+#playlistNameInput {
+	position: absolute;
+	top:0%;
+	width:98%;
+	background: #5A5560;
+	background-color: #5A5560;
+	color: #FAED26;
+	border-left:none;
+	border-right:none;
+	border-top:none;
+	border-color: #46344E;
+	font-size:1.4rem;
+	padding-left:2%;
+	height:10%;
+	max-height: 10%;
+	min-height:10%;
+	z-index:1;
+}
+
+#playlistNameInput:-webkit-autofill,
+#playlistNameInput:-webkit-autofill:hover, 
+#playlistNameInput:-webkit-autofill:focus, 
+#playlistNameInput:-webkit-autofill:active  {
+    -webkit-box-shadow: 0 0 0 30px #5A5560 inset !important;
+	-webkit-text-fill-color: #FAED26 !important;
+}
+
+#playlistSubmit {
+	position: absolute;
+	bottom:0%;
+	width: 100%;
+	height:5%;
+}
+
+#playlistTrackTable {
+	max-height: 85%;
+	top:10%;
+	position:absolute;
+	overflow-y:scroll;
+	overflow-x:hidden;
+	table-layout: fixed;
+	display:block;
+	max-width:100%;
+	padding-top:1%;
+	text-overflow: ellipsis;
+	table-layout: fixed;
+}
+
+#playlistTrackTable::-webkit-scrollbar {
+    display: none;
+}
+
+.playlistTrackTableRow {
+	border-top: solid;
+	border-top-width: 1%;
+	border-top-color:  #5A5560;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor: pointer;
+	color: #FAED26;
+	text-overflow: ellipsis;
+}
+
+.playlistTrackTableRow:hover {
+	background: #46344E;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.playlistTrackTableCellNameDiv {
+	white-space:nowrap;
+	overflow:hidden;
+	display: block;
+	text-overflow: ellipsis;
+}
+
+.playlistTrackTableCellNameDiv:hover {
+  overflow: visible;
+}
+
+.playlistSongTitleColumn {
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	display: block;
+	width: 90%;
+}
+
+.playlistMinusColumn {
+	width:10%;
+	max-width: 10%;
+	font-weight:bold;
+	text-align:center;
+	align:center;
+}
+
+.mainArtistTrackTableRow {
+	border-top: solid;
+	border-top-width: 1%;
+	border-top-color:  #5A5560;
+	overflow:hidden;
+	white-space:nowrap;
+	cursor: pointer;
+	
+}
+
+.mainArtistTrackTableRow:hover {
+	background: #46344E;
+	cursor: pointer;
+	font-weight: bold;
+	margin:10%;
+}
+
+.mainArtistTrackTableCellNameDiv {
+	white-space:nowrap;
+	overflow:hidden;
+	display: block;
+}
+
+.mainArtistTrackTableCellNameDiv:hover {
+  overflow: visible;
+}
+
+.mainArtistTrackTableCellName {
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	display: block;
+}
+
+.mainArtistTrackTableCellName:hover {
+	white-space:normal;
+	overflow:hidden;
+	text-overflow: ellipsis;
+	display: block;
+}
+
+.mainArtistSongTitleColumn {
+	width:90%;
+}
+
+.mainArtistPlusColumn {
+	width:10%;
+	font-weight:bold;
+	text-align:center;
+	align:center;
+}
+
+.mainArtistButton {
+	width:100%;
+}
+
+.otherArtistButton {
+	position:absolute;
+	min-width:14%;
+	max-width:14%;
+	height:4%;
+	border-radius:10px;
+	border-width:10%;
+	border-color:#FAED26;
+	color: #FAED26;
+	background: #5A5560;
+	white-space:nowrap;
+	overflow:hidden;
+	display:block;
+	text-overflow:ellipsis;
+}
+
+button {
+	border-width:10%;
+	border-color:#FAED26;
+	color: #FAED26;
+	background: #5A5560;
+}
+
+button:hover {
+	background: #46344E;
+	cursor: pointer;
+	font-weight: bold;
+}
+
+.mainArtistButton {
+	min-width:30%;
+	max-width:30%;
+	width:30%;
+	padding:1%;
+	margin-top:1%;
+	margin-right:1%;
+	float:left;
+}
+
+.spiderLegConnector {
+	position:absolute;
+	left:0%;
+	top:0%;
+	width:100%;
+	height:100%;
+	stroke:#FAED26;
+	stroke-width:2;
+	z-index:-1;
+}
+
+.hidden {
+	display:none;
+}
